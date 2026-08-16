@@ -12,6 +12,10 @@
 - Visualización de estado en la consola (si es válido o no el precio y la cantidad de los productos y si está disponible el producto para la venta).
 - Verficación de la disponibilidad y precio válido del producto.
 - Recorrido de las unidades vendidas del producto
+- Almacenmiento de los productos en un arreglo
+- mostrar catalogo de productos en la consola
+- filtar productos por nombre y sin stock
+- ordenar productos por precio de forma descendente
 
 ## Requisitos
 - Node.js instalado en el sistema.
@@ -86,4 +90,16 @@ node app.js
 - rest parameters
 - scope y closure
 - Funciones como valores y funciones de orden superior
--
+
+## Módulo 6: Arrays
+#### Temas
+- Declaración de arrays
+- Acceso a elementos
+- Modificación de elementos
+- Índices
+- Longitud
+- Recorridos
+- forEach, map, filter, reduce
+- find, findIndex, some, every
+- sort, reverse
+- Copias y referencias
