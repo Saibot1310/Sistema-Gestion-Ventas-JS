@@ -9,6 +9,10 @@ const subtotal = precioProducto * cantidadProducto;
 const montoDescuento = subtotal * descuentoProducto;
 const total = subtotal - montoDescuento;
 
+// Validaciones como valores booleanos
+const precioValido = precioProducto > 0;
+const hayStock = cantidadProducto > 0;
+
 // Representación de los datos de un producto
 console.log("=== Producto registrado ===");
 console.log("Nombre:", nombreProducto);
@@ -21,3 +25,7 @@ console.log("=== Cálculo ===");
 console.log("Subtotal:", subtotal);
 console.log("Monto descuento:", montoDescuento);
 console.log("Total a pagar:", total);
+
+console.log("=== Validaciones ===");
+console.log("¿El precio es válido?:", precioValido);
+console.log("¿Hay stock?:", hayStock);
