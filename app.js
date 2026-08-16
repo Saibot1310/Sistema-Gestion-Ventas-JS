@@ -46,7 +46,7 @@ function actualizarPrecio(catalogo, nombreBuscado, nuevoPrecio) {
 }
 
 function calcularSubtotal(precio, cantidad) {
-  return (subtotal = precioProducto * cantidadProducto);
+  return (subtotal = precio * cantidad);
 }
 
 function calcularDescuento(subtotal, porcentaje = 0) {
