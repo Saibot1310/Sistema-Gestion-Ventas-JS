@@ -13,7 +13,7 @@ function calcularTotalCatalogo(catalogo) {
 function mostrarCatalogo(catalogo) {
   console.log('=== Catálogo de productos ===');
   catalogo.forEach(({ nombre, precio, cantidad }) => {
-    console.log(`${nombre} | $${precio} | stock: ${cantidad}`);
+    console.log(`${nombre.trim()} | ${formatearPrecio(precio)} | stock: ${cantidad}`);
   });
 }
 
@@ -55,6 +55,13 @@ function calcularDescuento(subtotal, porcentaje = 0) {
 
 function calcularTotal(subtotal, descuento) {
   return subtotal - descuento;
+}
+
+function formatearPrecio(valor) {
+  return new Intl.NumberFormat('es-AR', {
+    style: 'currency',
+    currency: 'ARS',
+  }).format(valor);
 }
 
 console.log(calcularTotalCatalogo(catalogo));
