@@ -10,6 +10,8 @@
 - Visulaización de los productos registrados en la consola.
 - Visualización de los calculos de la venta en la consola.
 - Visualización de estado en la consola (si es válido o no el precio y la cantidad de los productos y si está disponible el producto para la venta).
+- Verficación de la disponibilidad y precio válido del producto.
+- Recorrido de las unidades vendidas del producto
 
 ## Requisitos
 - Node.js instalado en el sistema.
@@ -52,6 +54,7 @@ node app.js
 - Coerción de tipos
 
 ### Módulo 3: Operadores y Expresiones
+#### Temas
 - Operadores aritméticos
 - Operadores de asignación
 - Operadores de comparación
@@ -62,3 +65,12 @@ node app.js
 - Operadores de nullish coalescing y optional chaining
 - Precedencia de operadores
 - Evaluación de expresiones
+
+### Módulo 4: Estructuras de Control
+#### Temas
+- if, else, else if
+- switch
+- while, do while
+- for
+- for...of, for...in
+- break, continue, bucles anidados y control de flujo
