@@ -4,6 +4,38 @@ const precioProducto = 1500.5;
 const cantidadProducto = 3;
 const descuentoProducto = 0.1;
 
+const catalogoNombres = ['Teclado mecánico', 'Mouse', 'Monitor'];
+const catalogoPrecios = [1500.5, 800, 25000];
+const catalogoCantidades = [3, 2, 1];
+
+function calcularTotalCatalogo(nombres, precios, cantidades) {
+  return nombres.reduce((total, nombre, indice) => {
+    const subtotal = calcularSubtotal(precios[indice], cantidades[indice]);
+    return total + subtotal;
+  }, 0);
+}
+
+function mostrarCatalogo(nombres, precios, cantidades) {
+  console.log('=== Catálogo de productos ===');
+  nombres.forEach((nombre, indice) => {
+    console.log(`- ${nombre}: $${precios[indice]} x ${cantidades[indice]}`);
+  });
+}
+
+function buscarProductoPorNombre(nombres, nombreBuscado) {
+  return nombres.findIndex((nombre) => nombre === nombreBuscado);
+}
+
+function obtenerProductosSinStock(nombres, cantidades) {
+  return nombres.filter((nombre, indice) => cantidades[indice] === 0);
+}
+
+function nombresOrdenadosPorPrecio(nombres, precios) {
+  const indices = nombres.map((nombre, indice) => indice);
+  indices.sort((a, b) => precios[b] - precios[a]);
+  return indices.map((indice) => nombres[indice]);
+}
+
 // Cálculos de negocio
 
 function calcularSubtotal(precio, cantidad) {
@@ -73,3 +105,8 @@ procesarVenta(
   cantidadProducto,
   descuentoProducto
 );
+
+mostrarCatalogo(catalogoNombres, catalogoPrecios, catalogoCantidades);
+console.log("Total del catálogo:", calcularTotalCatalogo(catalogoNombres, catalogoPrecios, catalogoCantidades));
+console.log("Posición de 'Mouse':", buscarProductoPorNombre(catalogoNombres, "Mouse"));
+console.log("Ordenado por precio:", nombresOrdenadosPorPrecio(catalogoNombres, catalogoPrecios));
