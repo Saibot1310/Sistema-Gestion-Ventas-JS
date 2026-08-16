@@ -12,6 +12,7 @@
 - agregar producto
 - eliminar producto
 - actualizar producto
+- Formato de precio en ARS
 
 ## Requisitos
 - Node.js instalado en el sistema.
@@ -113,3 +114,14 @@ node app.js
 - Destructuración de objetos
 - Spread operator y Shallow copy
 - Referencias
+
+## Módulo 8: Strings, fechas y estructuras incorporadas
+#### Temas
+- Template literals
+- Métodos de strings
+- Expresiones regulares
+- Fechas y objetos Date
+- Math
+- Number
+- Boolean
+- Conversión y formateo de valores
