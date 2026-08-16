@@ -27,7 +27,7 @@ console.log("Descuento:", descuentoProducto);
 console.log("=== Cálculo ===");
 console.log("Subtotal:", subtotal);
 console.log("Monto descuento:", montoDescuento);
-console.log("Total a pagar:", total);
+console.log("Total:", total);
 
 // Validaciones
 console.log("=== Validaciones ===");
@@ -42,3 +42,18 @@ const estadoProducto = productoDisponible
   ? "Disponible para la venta"
   : "No disponible";
 console.log("Estado:", estadoProducto);
+
+// Procesamiento de la venta
+if (productoDisponible) {
+  console.log("Procesando venta...");
+  console.log(`Se vendieron ${cantidadProducto} unidades de "${nombreProducto}"`);
+  console.log(`Total a cobrar $${total}}`);
+} else {
+  console.log("Venta rechazada");
+}
+
+if (!precioValido) {
+  console.log("Motivo: el precio no es válido");
+} else if (!hayStock) {
+  console.log("Motivo: no hay stock disponible");
+}
