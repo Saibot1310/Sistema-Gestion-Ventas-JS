@@ -74,3 +74,16 @@ node app.js
 - for
 - for...of, for...in
 - break, continue, bucles anidados y control de flujo
+
+### Módulo 5: Funciones
+#### Temas
+- Declaración de funciones
+- Expresiones de funciones
+- Funciones flecha
+- Parámetros y argumentos
+- Valores de retorno
+- Valores por defecto
+- rest parameters
+- scope y closure
+- Funciones como valores y funciones de orden superior
+-
