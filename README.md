@@ -5,8 +5,11 @@
 
 # Funcionalidades actuales
 - Representación mínima del productos (nombre, precio, cantidad, descuento en porcentaje).
+- Calculo de subtotal, descuento y total de la venta.
+- validaciones simples de precio y cantidad en variables
 - Visulaización de los productos registrados en la consola.
-- Verificación de tipos de datos al registrar un producto.
+- Visualización de los calculos de la venta en la consola.
+- Visualización de estado en la consola (si es válido o no el precio y la cantidad de los productos y si está disponible el producto para la venta).
 
 ## Requisitos
 - Node.js instalado en el sistema.
@@ -47,3 +50,15 @@ node app.js
 - Tipado dinamico
 - Conversión de tipos
 - Coerción de tipos
+
+### Módulo 3: Operadores y Expresiones
+- Operadores aritméticos
+- Operadores de asignación
+- Operadores de comparación
+- Igualdad estricta y no estricta
+- Operadores lógicos
+- Operadores de incremento y decremento
+- Operador ternario
+- Operadores de nullish coalescing y optional chaining
+- Precedencia de operadores
+- Evaluación de expresiones
