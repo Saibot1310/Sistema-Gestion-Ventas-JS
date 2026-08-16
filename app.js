@@ -47,8 +47,13 @@ console.log("Estado:", estadoProducto);
 if (productoDisponible) {
   console.log("Procesando venta...");
   console.log(`Se vendieron ${cantidadProducto} unidades de "${nombreProducto}"`);
-  console.log(`Total a cobrar $${total}}`);
-} else {
+  console.log(`Total a cobrar $${total}`);
+
+  console.log("=== Detalle de envio ===")
+    for (let unidad = 1; unidad <= cantidadProducto; unidad++) {
+      console.log(`Preparando unidad ${unidad} de ${cantidadProducto}...`);
+    }
+  } else {
   console.log("Venta rechazada");
 }
 
