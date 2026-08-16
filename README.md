@@ -4,18 +4,14 @@
 - Construir un programa en JavaScript que irá creciendo progresivamente para realizar una gestión de ventas, permitiendo registrar productos, calcular las ventas y generar reportes de manera eficiente. El laboratorio de desarrollo consiste en implementar funcionalidades básicas de un sistema de ventas, a medida que se avanza en la construcción del programa, se irán agregando nuevas características y mejoras.
 
 # Funcionalidades actuales
-- Representación mínima del productos (nombre, precio, cantidad, descuento en porcentaje).
+- Representación del producto con nombre, precio y cantidad en un objeto de catáologo.
 - Calculo de subtotal, descuento y total de la venta.
-- validaciones simples de precio y cantidad en variables
 - Visulaización de los productos registrados en la consola.
-- Visualización de los calculos de la venta en la consola.
-- Visualización de estado en la consola (si es válido o no el precio y la cantidad de los productos y si está disponible el producto para la venta).
-- Verficación de la disponibilidad y precio válido del producto.
-- Recorrido de las unidades vendidas del producto
-- Almacenmiento de los productos en un arreglo
-- mostrar catalogo de productos en la consola
 - filtar productos por nombre y sin stock
 - ordenar productos por precio de forma descendente
+- agregar producto
+- eliminar producto
+- actualizar producto
 
 ## Requisitos
 - Node.js instalado en el sistema.
@@ -103,3 +99,17 @@ node app.js
 - find, findIndex, some, every
 - sort, reverse
 - Copias y referencias
+
+## Módulo 7: Objetos
+#### Temas
+- Declaración de objetos
+- Propiedades, valores y métodos
+- Acceso mediante notación de punto y corchetes
+- Modificación
+- Eliminación
+- Objetos anidados
+- this
+- Object.keys, Object.values, Object.entries
+- Destructuración de objetos
+- Spread operator y Shallow copy
+- Referencias
