@@ -135,3 +135,10 @@ node app.js
 - throw
 - Error
 - Errores personalizados
+
+## Módulo 10: Modularización
+#### Temas
+- Módulos en JavaScript
+- export, import, named exports, default exports
+- ES Modules y CommonJS
+- Dependencias y diseño modular
