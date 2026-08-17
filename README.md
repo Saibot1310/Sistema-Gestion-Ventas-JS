@@ -169,3 +169,11 @@ node app.js
 - encadenamiento de Promises
 - Promise.all, Promise.race, Promise.allSettled
 - async/await
+
+### Módulo 14: Event Loop
+#### Temas
+- Call Stack
+- Heap
+- Task Queue
+- Microtask Queue
+- Event Loop
