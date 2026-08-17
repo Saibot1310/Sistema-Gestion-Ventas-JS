@@ -13,6 +13,8 @@
 - eliminar producto
 - actualizar producto
 - Formato de precio en ARS
+- Validación de productos (nombre, precio, cantidad y descuento)
+- Manejo personalizado de errores y mensajes de validación
 
 ## Requisitos
 - Node.js instalado en el sistema.
@@ -125,3 +127,11 @@ node app.js
 - Number
 - Boolean
 - Conversión y formateo de valores
+
+## Módulo 9: Manejo de errores
+#### Temas
+- Errores de sintaxis, de ejecución y de lógica
+- try, catch, finally
+- throw
+- Error
+- Errores personalizados
