@@ -159,3 +159,13 @@ node app.js
 - Funciones puras y efectos secundarios
 - Inmutabilidad
 - Composición
+
+### Módulo 13: Asincronía
+#### Temas
+- Callback
+- Callback hell
+- Promises
+- then, catch, finally
+- encadenamiento de Promises
+- Promise.all, Promise.race, Promise.allSettled
+- async/await
