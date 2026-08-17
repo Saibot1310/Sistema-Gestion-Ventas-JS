@@ -142,3 +142,12 @@ node app.js
 - export, import, named exports, default exports
 - ES Modules y CommonJS
 - Dependencias y diseño modular
+
+## Módulo 11: Programación Orientada a Objetos
+#### Temas
+- Objetos, clases instancias
+- Propiedades, métodos y this
+- Encapsulación
+- Herencia (extends, super)
+- Polimorfismo
+- Composición sobre herencia
