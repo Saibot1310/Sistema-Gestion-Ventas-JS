@@ -90,7 +90,7 @@ node app.js
 - scope y closure
 - Funciones como valores y funciones de orden superior
 
-## Módulo 6: Arrays
+### Módulo 6: Arrays
 #### Temas
 - Declaración de arrays
 - Acceso a elementos
@@ -103,7 +103,7 @@ node app.js
 - sort, reverse
 - Copias y referencias
 
-## Módulo 7: Objetos
+### Módulo 7: Objetos
 #### Temas
 - Declaración de objetos
 - Propiedades, valores y métodos
@@ -117,7 +117,7 @@ node app.js
 - Spread operator y Shallow copy
 - Referencias
 
-## Módulo 8: Strings, fechas y estructuras incorporadas
+### Módulo 8: Strings, fechas y estructuras incorporadas
 #### Temas
 - Template literals
 - Métodos de strings
@@ -128,7 +128,7 @@ node app.js
 - Boolean
 - Conversión y formateo de valores
 
-## Módulo 9: Manejo de errores
+### Módulo 9: Manejo de errores
 #### Temas
 - Errores de sintaxis, de ejecución y de lógica
 - try, catch, finally
@@ -136,14 +136,14 @@ node app.js
 - Error
 - Errores personalizados
 
-## Módulo 10: Modularización
+### Módulo 10: Modularización
 #### Temas
 - Módulos en JavaScript
 - export, import, named exports, default exports
 - ES Modules y CommonJS
 - Dependencias y diseño modular
 
-## Módulo 11: Programación Orientada a Objetos
+### Módulo 11: Programación Orientada a Objetos
 #### Temas
 - Objetos, clases instancias
 - Propiedades, métodos y this
@@ -151,3 +151,11 @@ node app.js
 - Herencia (extends, super)
 - Polimorfismo
 - Composición sobre herencia
+
+### Módulo 12: Programación Funcional
+#### Temas
+- Paradigma
+- Funciones de primera clase
+- Funciones puras y efectos secundarios
+- Inmutabilidad
+- Composición
