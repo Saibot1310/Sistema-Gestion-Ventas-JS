@@ -6,6 +6,7 @@ import {
   obtenerProductosSinStock,
   productosOrdenadosPorPrecio,
   agregarProducto,
+  deserializarProducto
 } from './products/products.js';
 
 import { manejarVenta } from './sales/sales.js';
@@ -46,3 +47,13 @@ manejarVenta(catalogo, 'Mouse inalámbrico', 1);
 
 // Ejemplo: venta fallida por producto inexistente
 manejarVenta(catalogo, 'Webcam', 1);
+
+// Ejemplo: recibir un producto externo como JSON e incorporarlo
+const productoExternoJSON = '{"nombre":"Webcam HD","precio":8500,"cantidad":4,"descuento":0}';
+try {
+  const productoExterno = deserializarProducto(productoExternoJSON);
+  const catalogoConExterno = agregarProducto(catalogo, productoExterno);
+  console.log(`Producto incorporado desde JSON. Catálogo ahora tiene ${catalogoConExterno.length} productos.`);
+} catch (error) {
+  console.log(`No se pudo incorporar el producto externo: ${error.message}`);
+}

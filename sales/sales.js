@@ -45,6 +45,10 @@ function procesarVenta(catalogo, nombreProducto, cantidadVendida) {
   return { venta, catalogoActualizado };
 }
 
+export function serializarVenta(venta) {
+  return JSON.stringify(venta, null, 2);
+}
+
 export function manejarVenta(catalogo, nombreProducto, cantidadVendida) {
   try {
     const { venta, catalogoActualizado } = procesarVenta(
@@ -55,6 +59,8 @@ export function manejarVenta(catalogo, nombreProducto, cantidadVendida) {
     console.log(
       `Venta registrada: ${venta.producto} x ${venta.cantidadVendida} -> ${formatearPrecio(venta.total)}`,
     );
+    console.log("Comprobante JSON:");
+    console.log(serializarVenta(venta))
     return catalogoActualizado;
   } catch (error) {
     if (error instanceof ProductoNoEncontradoError) {

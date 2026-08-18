@@ -1,4 +1,4 @@
-import { ProductoNoEncontradoError } from '../errors/errors.js';
+import { ProductoInvalidoError, ProductoNoEncontradoError } from '../errors/errors.js';
 import validarProducto from '../validations/validations.js';
 import formatearPrecio from '../helpers/formatPrice.js';
 
@@ -63,4 +63,17 @@ function actualizarPrecio(catalogo, nombreBuscado, nuevoPrecio) {
       ? { ...producto, precio: nuevoPrecio }
       : producto,
   );
+}
+
+export function deserializarProducto(textoJSON) {
+  let producto;
+
+  try {
+    producto = JSON.parse(textoJSON);
+  } catch (error) {
+    throw new ProductoInvalidoError(`El texto recibido no es JSON válido: ${error.messsage}`, 'json');
+  }
+
+  validarProducto(producto);
+  return producto;
 }
