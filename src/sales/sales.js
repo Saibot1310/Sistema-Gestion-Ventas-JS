@@ -1,4 +1,4 @@
-import { ProductoNoEncontradoError, StockInsuficienteError } from '../errors/errors.js';
+import { ErrorDominio } from '../errors/errors.js';
 import { obtenerProductoPorNombre } from '../products/products.js';
 import formatearPrecio from '../helpers/formatPrice.js';
 
@@ -63,9 +63,7 @@ export function manejarVenta(catalogo, nombreProducto, cantidadVendida) {
     console.log(serializarVenta(venta))
     return catalogoActualizado;
   } catch (error) {
-    if (error instanceof ProductoNoEncontradoError) {
-      console.log(`No se pudo vender: ${error.message}`);
-    } else if (error instanceof StockInsuficienteError) {
+    if (error instanceof ErrorDominio) {
       console.log(`No se pudo vender: ${error.message}`);
     } else {
       console.log('Ocurrió un error inesperado al procesar la venta.');
