@@ -177,3 +177,11 @@ node app.js
 - Task Queue
 - Microtask Queue
 - Event Loop
+
+### Módulo 15: JSON y manejo de datos
+#### Temas
+- JSON
+- parse, stringify
+- Valores permitidos
+- Serialización y deserialización
+- Uso de JSON para intercambio de información
