@@ -22,7 +22,7 @@
 ## Ejecución
 Escribir en la terminal en la raíz del proyecto:
 ```
-node app.js
+npm start
 ```
 
 ## Etapa 1: JavaScript
