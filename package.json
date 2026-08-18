@@ -1,0 +1,20 @@
+{
+  "name": "Sistema de gestion de ventas",
+  "version": "1.0.0",
+  "description": "- Construir un programa en JavaScript que irá creciendo progresivamente para realizar una gestión de ventas, permitiendo registrar productos, calcular las ventas y generar reportes de manera eficiente. El laboratorio de desarrollo consiste en implementar funcionalidades básicas de un sistema de ventas, a medida que se avanza en la construcción del programa, se irán agregando nuevas características y mejoras.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saibot1310/Sistema-Gestion-Ventas-JS.git"
+  },
+  "author": "Tobías Vega",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Saibot1310/Sistema-Gestion-Ventas-JS/issues"
+  },
+  "homepage": "https://github.com/Saibot1310/Sistema-Gestion-Ventas-JS#readme"
+}
