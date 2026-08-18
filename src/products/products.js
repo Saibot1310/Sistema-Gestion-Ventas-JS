@@ -71,7 +71,7 @@ export function deserializarProducto(textoJSON) {
   try {
     producto = JSON.parse(textoJSON);
   } catch (error) {
-    throw new ProductoInvalidoError(`El texto recibido no es JSON válido: ${error.messsage}`, 'json');
+    throw new ProductoInvalidoError(`El texto recibido no es JSON válido: ${error.message}`, 'json');
   }
 
   validarProducto(producto);
