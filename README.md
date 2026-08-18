@@ -199,3 +199,15 @@ node app.js
 - instalación de paquetes
 - ejecución de proyectos
 - organización de un proyecto JavaScript
+
+### Módulo 17: Calidad y Buenas prácticas en JavaScript
+#### Temas
+- Legibilidad y consistencia
+- Convenciones de nombres
+- Organización de código
+- DRY
+- Separación de responsabilidades
+- Funciones pequeñas y cohesivas
+- Refactorización
+- Código mantenible
+- Introducción a prinicpios SOLID
