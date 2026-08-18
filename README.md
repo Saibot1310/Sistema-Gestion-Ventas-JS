@@ -185,3 +185,17 @@ node app.js
 - Valores permitidos
 - Serialización y deserialización
 - Uso de JSON para intercambio de información
+
+### Módulo 16: Entorno de desarrollo JavaScript
+#### Temas
+- Node.js
+- npm
+- package.json
+- Dependencias y devDependencies
+- Scripts
+- Versionado de paquetes
+- node_modules
+- package-lock.json
+- instalación de paquetes
+- ejecución de proyectos
+- organización de un proyecto JavaScript
