@@ -52,19 +52,6 @@ export function agregarProducto(catalogo, nuevoProducto) {
   return [...catalogo, nuevoProducto];
 }
 
-function eliminarProducto(catalogo, nombreBuscado) {
-  return catalogo.filter((producto) => producto.nombre !== nombreBuscado);
-}
-
-function actualizarPrecio(catalogo, nombreBuscado, nuevoPrecio) {
-  obtenerProductoPorNombre(catalogo, nombreBuscado);
-  return catalogo.map((producto) =>
-    producto.nombre === nombreBuscado
-      ? { ...producto, precio: nuevoPrecio }
-      : producto,
-  );
-}
-
 export function deserializarProducto(textoJSON) {
   let producto;
 
